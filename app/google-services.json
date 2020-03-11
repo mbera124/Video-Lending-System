@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1094382216796",
+    "firebase_url": "https://video-lending-system.firebaseio.com",
+    "project_id": "video-lending-system",
+    "storage_bucket": "video-lending-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094382216796:android:16c82d617a253d67",
+        "android_client_info": {
+          "package_name": "com.example.admin.videolendingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094382216796-nc4svh6a3gpish91mebl2pvu99e4it8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2HYimzdIFSfgJr1ZJC9MhV6FVGt6mr2Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

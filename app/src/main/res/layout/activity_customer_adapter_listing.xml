@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customer_adapter_listing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.example.admin.videolendingsystem.Customer.CustomerAdapterListing">
+
+    <TextView
+        android:text="Phone Number"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acustomer_fullname"
+        android:layout_alignLeft="@+id/acustomer_fullname"
+        android:layout_alignStart="@+id/acustomer_fullname"
+        android:layout_marginTop="34dp"
+        android:id="@+id/acustomer_phonenumber" />
+
+    <TextView
+        android:text="Address"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/acustomer_address"
+        android:layout_below="@+id/acustomer_phonenumber"
+        android:layout_alignLeft="@+id/acustomer_phonenumber"
+        android:layout_alignStart="@+id/acustomer_phonenumber" />
+
+    <TextView
+        android:text="Nat Id"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acustomer_address"
+        android:layout_alignLeft="@+id/acustomer_address"
+        android:layout_alignStart="@+id/acustomer_address"
+        android:layout_marginTop="34dp"
+        android:id="@+id/acustomer_natId" />
+
+    <TextView
+        android:text="Gender"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/acustomer_gender"
+        android:layout_below="@+id/acustomer_natId"
+        android:layout_alignLeft="@+id/acustomer_natId"
+        android:layout_alignStart="@+id/acustomer_natId" />
+
+    <TextView
+        android:text="Registered By"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acustomer_gender"
+        android:layout_alignLeft="@+id/acustomer_gender"
+        android:layout_alignStart="@+id/acustomer_gender"
+        android:layout_marginTop="34dp"
+        android:id="@+id/acustomer_registeredBy" />
+
+    <TextView
+        android:text="Name"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/acustomer_fullname"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fine"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.videolendingsystem.Video.AddVideo">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/video_name"
+        android:hint="Video Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/video_genre"
+        android:hint="Genre"
+        android:layout_below="@+id/video_name"
+        android:layout_alignLeft="@+id/video_name"
+        android:layout_alignStart="@+id/video_name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="22dp"
+        android:id="@+id/video_director"
+        android:hint="Director"
+        android:layout_below="@+id/video_genre"
+        android:layout_alignLeft="@+id/video_genre"
+        android:layout_alignStart="@+id/video_genre" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:id="@+id/video_rating"
+        android:hint="Rating"
+        android:layout_below="@+id/video_director"
+        android:layout_alignLeft="@+id/video_director"
+        android:layout_alignStart="@+id/video_director" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/video_releaseDate"
+        android:hint="Release Date"
+        android:layout_below="@+id/video_rating"
+        android:layout_alignLeft="@+id/video_rating"
+        android:layout_alignStart="@+id/video_rating" />
+
+    <Button
+        android:text="SAVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/VideoSaveButton"
+        android:layout_below="@+id/video_releaseDate"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+</ScrollView>

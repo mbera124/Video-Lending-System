@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fine"
+    tools:context="com.example.admin.videolendingsystem.Login.LoginActivity">
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_email"
+        android:layout_alignLeft="@+id/textView_email"
+        android:layout_alignStart="@+id/textView_email"
+        android:layout_marginTop="42dp"
+        android:textSize="20dp"
+        android:id="@+id/textView_password" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_password"
+        android:layout_toRightOf="@+id/textView_password"
+        android:layout_toEndOf="@+id/textView_password"
+        android:layout_marginTop="41dp"
+        android:textSize="20dp"
+        android:id="@+id/loginButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/loginemail"
+        android:layout_alignBaseline="@+id/textView_email"
+        android:layout_alignBottom="@+id/textView_email"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/textView_loginerr"
+        android:layout_below="@+id/loginButton"
+        android:layout_alignLeft="@+id/textView_password"
+        android:layout_alignStart="@+id/textView_password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/loginpassword"
+        android:layout_alignBaseline="@+id/textView_password"
+        android:layout_alignBottom="@+id/textView_password"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_email"
+        android:layout_marginTop="190dp"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/loginemail"
+        android:layout_toStartOf="@+id/loginemail"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp" />
+
+</RelativeLayout>

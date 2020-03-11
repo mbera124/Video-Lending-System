@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fine">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cchange_customer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.admin.videolendingsystem.Customer.ChangeCustomer">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:layout_below="@+id/ccchange_lastName"
+        android:layout_alignLeft="@+id/ccchange_lastName"
+        android:layout_alignStart="@+id/ccchange_lastName"
+        android:layout_marginTop="13dp"
+        android:id="@+id/ccchange_address"
+        android:hint="Address" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:id="@+id/ccchange_lastName"
+        android:hint="Last Name"
+        android:layout_below="@+id/ccchange_firstName"
+        android:layout_alignLeft="@+id/ccchange_firstName"
+        android:layout_alignStart="@+id/ccchange_firstName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/ccchange_phoneNumber"
+        android:hint="Phone Number"
+        android:layout_below="@+id/ccchange_address"
+        android:layout_alignLeft="@+id/ccchange_address"
+        android:layout_alignStart="@+id/ccchange_address"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/ccchange_natId"
+        android:hint="National Id"
+        android:layout_below="@+id/ccchange_phoneNumber"
+        android:layout_alignLeft="@+id/ccchange_phoneNumber"
+        android:layout_alignStart="@+id/ccchange_phoneNumber"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ccchange_gender"
+        android:hint="Gender"
+        android:layout_below="@+id/ccchange_natId"
+        android:layout_alignLeft="@+id/ccchange_natId"
+        android:layout_alignStart="@+id/ccchange_natId"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:text="SAVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ccchangeSaveButton"
+        android:layout_below="@+id/ccchange_registeredBy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentBottom="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ccchange_registeredBy"
+        android:hint="Registered By"
+        android:layout_below="@+id/ccchange_gender"
+        android:layout_alignLeft="@+id/ccchange_gender"
+        android:layout_alignStart="@+id/ccchange_gender"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="31dp"
+        android:id="@+id/ccchange_firstName"
+        android:hint="First Name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+</ScrollView>

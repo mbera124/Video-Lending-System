@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_adapter_listing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.example.admin.videolendingsystem.Video.VideoAdapterListing">
+
+    <TextView
+        android:text="Video Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/avideo_videoName" />
+
+    <TextView
+        android:text="Release Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:id="@+id/avideo_releaseDate"
+        android:layout_below="@+id/avideo_rating"
+        android:layout_alignLeft="@+id/avideo_rating"
+        android:layout_alignStart="@+id/avideo_rating" />
+
+    <TextView
+        android:text="Genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/avideo_genre"
+        android:layout_below="@+id/avideo_videoName"
+        android:layout_alignLeft="@+id/avideo_videoName"
+        android:layout_alignStart="@+id/avideo_videoName" />
+
+    <TextView
+        android:text="Director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/avideo_director"
+        android:layout_below="@+id/avideo_genre"
+        android:layout_alignLeft="@+id/avideo_genre"
+        android:layout_alignStart="@+id/avideo_genre" />
+
+    <TextView
+        android:text="Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:id="@+id/avideo_rating"
+        android:layout_below="@+id/avideo_director"
+        android:layout_alignLeft="@+id/avideo_director"
+        android:layout_alignStart="@+id/avideo_director" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.admin.videolendingsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Firebase.FirebaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".Login.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Employee.EmployeesActivity" />
+        <activity android:name=".Customer.CustomersActivity" />
+        <activity android:name=".Video.VideosActivity" />
+        <activity android:name=".RentedVideo.RentedVideosActivity" />
+        <activity android:name=".Employee.AddEmployee" />
+        <activity android:name=".Login.RegisterActivity" >
+
+        </activity>
+        <activity android:name=".Employee.ShowEmployees" />
+        <activity android:name=".Employee.DeleteEmployee" />
+        <activity android:name=".Customer.AddCustomer" />
+        <activity android:name=".Customer.ShowCustomers" />
+        <activity android:name=".Video.AddVideo" />
+        <activity android:name=".Video.ShowVideos" />
+        <activity android:name=".Employee.EditEmployees" />
+        <activity android:name=".Employee.ChangeEmployee" />
+        <activity android:name=".Customer.DeleteCustomer" />
+        <activity android:name=".Video.DeleteVideo" />
+        <activity android:name=".Customer.EditCustomer" />
+        <activity android:name=".Video.EditVideo" />
+        <activity android:name=".Customer.ChangeCustomer" />
+        <activity android:name=".Video.ChangeVideo" />
+        <activity android:name=".Video.VideoChange" />
+        <activity android:name=".RentedVideo.AddRentedVideos" />
+        <activity android:name=".RentedVideo.ShowRentedVideos" />
+        <activity android:name=".RentedVideo.AdapterListingRentedVideos" />
+        <activity android:name=".RentedVideo.DeleteRentedVideos" />
+        <activity android:name=".RentedVideo.EditRentedVideos" />
+        <activity android:name=".RentedVideo.ChangeRentedVideos" />
+        <activity android:name=".UserActivity"/>
+    </application>
+
+</manifest>

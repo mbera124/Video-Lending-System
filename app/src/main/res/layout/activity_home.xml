@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fine"
+    tools:context="com.example.admin.videolendingsystem.Login.HomeActivity">
+
+    <TextView
+        android:text="Customers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_employees"
+        android:layout_alignLeft="@+id/textView_employees"
+        android:layout_alignStart="@+id/textView_employees"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:id="@+id/textView_customers" />
+
+    <TextView
+        android:text="Videos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_customers"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:id="@+id/textView_videos"
+        android:layout_alignLeft="@+id/textView_customers"
+        android:layout_alignStart="@+id/textView_customers" />
+
+    <TextView
+        android:text="Employees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="58dp"
+        android:textSize="20dp"
+        android:id="@+id/textView_employees"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Rented videos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView_rentedvideos"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView_videos"
+        android:layout_alignLeft="@+id/textView_register"
+        android:layout_alignStart="@+id/textView_register" />
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_logout"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView_customers"
+        android:layout_alignEnd="@+id/textView_customers"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView_register"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView_rentedvideos"
+        android:layout_alignLeft="@+id/textView_videos"
+        android:layout_alignStart="@+id/textView_videos" />
+</RelativeLayout>

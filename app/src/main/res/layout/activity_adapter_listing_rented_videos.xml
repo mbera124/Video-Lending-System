@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_adapter_listing_rented_videos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.videolendingsystem.RentedVideo.AdapterListingRentedVideos">
+
+    <TextView
+        android:text="Video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rented_fullname"
+        android:layout_alignLeft="@+id/rented_fullname"
+        android:layout_alignStart="@+id/rented_fullname"
+        android:layout_marginTop="19dp"
+        android:id="@+id/rented_video" />
+
+    <TextView
+        android:text="Date Rented"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rented_video"
+        android:layout_alignLeft="@+id/rented_video"
+        android:layout_alignStart="@+id/rented_video"
+        android:layout_marginTop="26dp"
+        android:id="@+id/rented_dateRented" />
+
+    <TextView
+        android:text="Expected Return Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rented_dateRented"
+        android:layout_alignLeft="@+id/rented_dateRented"
+        android:layout_alignStart="@+id/rented_dateRented"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rented_expRentedDate" />
+
+    <TextView
+        android:text="Returned Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rented_expRentedDate"
+        android:layout_alignLeft="@+id/rented_expRentedDate"
+        android:layout_alignStart="@+id/rented_expRentedDate"
+        android:layout_marginTop="33dp"
+        android:id="@+id/rented_returnedDate" />
+
+    <TextView
+        android:text="Penalty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rented_returnedDate"
+        android:layout_alignLeft="@+id/rented_returnedDate"
+        android:layout_alignStart="@+id/rented_returnedDate"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rented_penalty" />
+
+    <TextView
+        android:text="Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rented_penalty"
+        android:layout_alignLeft="@+id/rented_penalty"
+        android:layout_alignStart="@+id/rented_penalty"
+        android:layout_marginTop="31dp"
+        android:id="@+id/rented_status" />
+
+    <TextView
+        android:text="Fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/rented_fullname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

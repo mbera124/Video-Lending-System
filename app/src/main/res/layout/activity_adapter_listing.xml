@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_adapter_listing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.example.admin.videolendingsystem.Employee.AdapterListing">
+
+
+    <TextView
+        android:text="Name"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:id="@+id/user_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/user_phonenumber"
+        android:layout_alignStart="@+id/user_phonenumber" />
+
+    <TextView
+        android:text="Phone Number"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:id="@+id/user_phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_below="@+id/user_fullname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Address"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/user_address"
+        android:layout_below="@+id/user_phonenumber"
+        android:layout_alignLeft="@+id/user_phonenumber"
+        android:layout_alignStart="@+id/user_phonenumber" />
+
+    <TextView
+        android:text="Nat Id"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/user_natId"
+        android:layout_below="@+id/user_address"
+        android:layout_alignLeft="@+id/user_address"
+        android:layout_alignStart="@+id/user_address" />
+
+    <TextView
+        android:text="Gender"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/user_gender"
+        android:layout_below="@+id/user_natId"
+        android:layout_alignLeft="@+id/user_natId"
+        android:layout_alignStart="@+id/user_natId" />
+
+    <TextView
+        android:text="Date Employed"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/user_dateemployed"
+        android:layout_below="@+id/user_gender"
+        android:layout_alignLeft="@+id/user_gender"
+        android:layout_alignStart="@+id/user_gender" />
+
+</RelativeLayout>

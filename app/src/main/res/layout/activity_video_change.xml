@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fine"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_change"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.videolendingsystem.Video.VideoChange">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/change_director"
+        android:layout_alignRight="@+id/change_director"
+        android:layout_alignEnd="@+id/change_director"
+        android:layout_marginTop="31dp"
+        android:id="@+id/change_rating"
+        android:hint="Rating" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/change_director"
+        android:hint="Director"
+        android:layout_below="@+id/change_genre"
+        android:layout_alignLeft="@+id/change_genre"
+        android:layout_alignStart="@+id/change_genre"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="69dp"
+        android:id="@+id/change_videoName"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:hint="Video Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/change_genre"
+        android:hint="Genre"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/change_videoName"
+        android:layout_alignLeft="@+id/change_videoName"
+        android:layout_alignStart="@+id/change_videoName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/change_releaseDate"
+        android:hint="Release Date"
+        android:layout_below="@+id/change_rating"
+        android:layout_alignLeft="@+id/change_rating"
+        android:layout_alignStart="@+id/change_rating"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="SAVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:id="@+id/change_videoSaveButton"
+        android:layout_below="@+id/change_releaseDate"
+        android:layout_alignLeft="@+id/change_releaseDate"
+        android:layout_alignStart="@+id/change_releaseDate"
+        android:layout_marginTop="24dp" />
+</RelativeLayout>
+</ScrollView>

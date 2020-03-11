@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/fine"
+    tools:context="com.example.admin.videolendingsystem.Customer.CustomersActivity">
+
+    <TextView
+        android:text="Customers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="126dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="47dp"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:id="@+id/textView_customersc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Delete Customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:textSize="20dp"
+        android:id="@+id/textView_customerdelete"
+        android:layout_below="@+id/textView_customeredit"
+        android:layout_alignLeft="@+id/textView_customeredit"
+        android:layout_alignStart="@+id/textView_customeredit" />
+
+    <TextView
+        android:text="View Customers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:textSize="20dp"
+        android:id="@+id/textView_customerview"
+        android:layout_below="@+id/textView_customeradd"
+        android:layout_alignLeft="@+id/textView_customeredit"
+        android:layout_alignStart="@+id/textView_customeredit" />
+
+    <TextView
+        android:text="Add Customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="78dp"
+        android:textSize="20dp"
+        android:id="@+id/textView_customeradd"
+        android:layout_below="@+id/textView_customersc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Edit Customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:textSize="20dp"
+        android:id="@+id/textView_customeredit"
+        android:layout_below="@+id/textView_customerview"
+        android:layout_alignLeft="@+id/textView_customeradd"
+        android:layout_alignStart="@+id/textView_customeradd" />
+</RelativeLayout>
